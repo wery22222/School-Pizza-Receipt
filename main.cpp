@@ -10,9 +10,10 @@ int main()
     std::string pizzaSize;
     std::string pizzaType;
     std::cout<< "Enter Pizza size (large, medium, small) ";
-    std::cin>>pizzaSize;
+    getline(std::cin, pizzaSize);
     std::cout<<"Enter Pizza type (Hawaiian, Farmhouse, Margherita, Meat Feast, Caspian Special, Super Supreme) ";
-    std::cin >>pizzaType;
+    getline(std::cin, pizzaType);
+    std::cout<<pizzaSize<<", "<<pizzaType<<std::endl;
     double price = 0.0;
     try
     {
